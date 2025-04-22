@@ -1,9 +1,11 @@
+import torch
 import streamlit as st
 from PIL import Image
 from ultralytics import YOLO
 import tempfile
 import os
 from pathlib import Path
+torch.classes.__path__ = [] 
 st.set_page_config(page_title="YOLO Object Detection", layout="centered")
 st.title("🔍 Object Detection using YOLOv8")
 st.markdown("Upload an image and run YOLOv8 to see detected objects with bounding boxes.")
