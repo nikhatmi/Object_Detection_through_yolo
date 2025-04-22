@@ -23,7 +23,7 @@ def load_model():
 model = load_model()
 
 # Confidence slider
-#conf_threshold = st.slider("Confidence Threshold", 0.1, 1.0, 0.3, 0.05)
+conf_threshold = 0.1
 
 if uploaded_file is not None:
     # Display uploaded image
