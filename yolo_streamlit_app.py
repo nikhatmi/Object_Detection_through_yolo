@@ -7,9 +7,11 @@ import os
 from pathlib import Path
 
 torch.classes.__path__ = [os.path.join(torch.__path__[0], torch.classes.__file__)]
+image = Image.open("background image for app.png")
+st.image(image, caption='TeddyGuard: Toy Safety Detection', use_column_width=True)
 
 st.set_page_config(page_title="YOLO Object Detection", layout="centered")
-st.title("🔍 Object Detection using YOLOv8")
+st.title("🧸 Detection of Safe and Unsafe Toys and Objects for Children Using YOLOv8 Deep Learning Model")
 st.markdown("Upload an image and run YOLOv8 to see detected objects with bounding boxes.")
 
 # Upload image
